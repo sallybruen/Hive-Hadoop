@@ -1,0 +1,10 @@
+set hive.exec.mode.local.auto=true;
+create database if not exists diamonds;
+use diamonds;
+create table diamondstable(c0 int, carat double, cut varchar(20), color varchar(10), clarity varchar(10), depth double, tableis int, price int, x double, y double, z double) row format delimited fields terminated by ',' tblproperties("skip.header.line.count"="1");
+load data inpath '/diamonds/diamonds.csv' into table diamondstable;
+#select * from diamondstable limit 20;
+select max(price) from diamondstable;
+#select count(cut) from diamondstable where cut like "Fair";
+select count(cut), cut from diamondstable group by cut; 
+select count(cut) from diamondstable;

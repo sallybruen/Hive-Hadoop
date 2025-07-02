@@ -1,0 +1,112 @@
+SHOW DATABASES;
+SHOW TABLES;
+CREATE TABLE trainer (id INT, first STRING, last STRING);
+INSERT INTO trainer VALUES (1, 'Luca', 'Fossati');
+quit;
+INSERT INTO trainer VALUES (1, 'Luca', 'Fossati');
+quit;
+SHOW TABLES;
+DESCRIBE trainer;
+INSERT INTO trainer VALUES (1, 'Luca', 'Fossati');
+quit;
+INSERT INTO trainer VALUES (1, 'Luca', 'Fossati');
+quit;
+SHOW TABLES;
+DESCRIBE trainer;
+INSERT INTO trainer VALUES (1, 'Luca', 'Fossati');
+select t1.first, t2.last from trainer t1 join trainer t2 on t1.id=t2.id;
+quit;
+show databases;
+quit
+;
+quit;
+quit
+;
+quit;
+create database olympics;
+show databases;
+quit
+;
+show databases;
+create database olympics;
+quit;
+show databases;
+create database olympics;
+quit;
+create database olympics;
+quit;
+create database olympics;
+quit;
+show databases;
+quit
+;
+show databases;
+create database olympics;
+quit;
+show databases;
+create database olympics;
+quit
+;
+show databases;
+quit;
+show databases;
+create database olympics;
+quit;
+show databases;
+create database olympics;
+quit
+;
+show databases;
+create database olympics;
+quit
+;
+ls
+;
+show databases;
+quit
+;
+show databases;
+quit
+;
+show databases;
+exit;
+show databases;
+create database olympics;
+quit;
+jps
+;
+show databases;
+use olympics
+;
+show tables;
+drop database olympics;
+show databases;
+quit;
+show databases;
+quit;
+show databases;
+create database diamonds;
+quit
+;
+show databases;
+create database diamonds;
+show databases;
+use diamonds;
+create table diamonds(c0 int, carat double, cut varchar(20), color varchar(10), depth double, tableis int, price int, x double, y double, z double) row format delimited fields terminated by ',' tblproperties("skip.header.line.count"="1");
+load data inpath '/diamonds/diamonds.csv' into table diamonds;
+quit
+;
+how databases;
+show databases;
+use diamonds;
+ls
+;
+show tables;
+show schema;
+show tables;
+desc diamonds;
+load data inpath '/diamonds/diamonds.csv' into table diamonds;
+select * from diamonds limit 20;
+set hive.exec.mode.local.auto=true;
+select max(price) from diamonds;
+quit;
